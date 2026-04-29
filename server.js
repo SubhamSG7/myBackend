@@ -7,6 +7,9 @@ const app=express();
 connect()
 
 
+app.get("/",function(req,res){
+    res.send("Welcome to the backend")
+})
 app.get('/product',async function(req,res){
     let {page,limit}=(req.query);
     page=Number(page);
