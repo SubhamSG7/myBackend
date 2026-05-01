@@ -8,6 +8,8 @@ connect()
 
 
 app.get("/",function(req,res){
+    console.log(req.ip);
+    
     res.send("Welcome to the backend")
 })
 app.get('/product',async function(req,res){
